@@ -1,14 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap");
 
 :root {
-  --color-bg: #7ba;
-  --color-accent: rgb(221, 56, 14);
-  --color-link: #d50;
-  --color-hover: #f90;
+  --color-bg: #8bb;
+  --color-accent: #b20;
+  --color-link: #e72;
+  --color-hover: #fa2;
   --text-color: #111;
   --header-bg: #333;
   --header-text: #fff;
   --shadow: 3px 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+body.dark-mode {
+  --color-bg: #334;
+  --color-accent: #e16;
+  --color-link: #f77;
+  --color-hover: #fb4;
+  --text-color: #eee;
+}
+
+body.dark-mode .div-header {
+  background-color: #011;
+}
+
+body.dark-mode .div-sidebar {
+  background-color: #122;
+}
+
+body.dark-mode .div-content {
+  background-color: #233;
+}
+
+body.dark-mode a {
+  color: var(--color-link);
+}
+
+body.dark-mode a:hover {
+  color: var(--color-hover);
 }
 
 * {
@@ -18,8 +46,10 @@
   font-family: "Open Sans", sans-serif;
   font-weight: lighter;
   line-height: 1.33;
-  text-wrap: balance;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  text-wrap: pretty;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
 
 body {
@@ -164,34 +194,6 @@ p {
 
 .div-content {
   background-color: #fee;
-}
-
-body.dark-mode {
-  --color-bg: #334;
-  --color-accent: #e16;
-  --color-link: #f65;
-  --color-hover: #fb4;
-  --text-color: #eee;
-}
-
-body.dark-mode .div-header {
-  background-color: #011;
-}
-
-body.dark-mode .div-sidebar {
-  background-color: #122;
-}
-
-body.dark-mode .div-content {
-  background-color: #233;
-}
-
-body.dark-mode a {
-  color: var(--color-link);
-}
-
-body.dark-mode a:hover {
-  color: var(--color-hover);
 }
 
 .theme-toggle-container {
