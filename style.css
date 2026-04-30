@@ -14,7 +14,7 @@
   --accent-hover: #1dd8d8;
 
   --border: #d8dee4;
-  --shadow: 0 4px 14px rgba(15, 23, 42, 0.12);
+  --shadow: 2px 3px 4px #0246;
 
   --radius: 12px;
 }
@@ -33,7 +33,6 @@ body.dark-mode {
   --accent-hover: #bafdf4;
 
   --border: #334155;
-  --shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
 }
 
 * {
@@ -115,7 +114,7 @@ body {
   flex-shrink: 0;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid rgba(255, 255, 255, 0.85);
+  border: 2px solid #fff;
   box-shadow: var(--shadow);
 }
 
@@ -217,7 +216,7 @@ a:hover {
 .contact-links {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
   gap: 0.45rem;
   margin-bottom: 0;
   max-width: none;
