@@ -92,7 +92,31 @@ body {
   padding: 2rem;
   background-color: var(--header-bg);
   color: var(--header-text);
-  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  text-align: left;
+}
+
+.header-text {
+  max-width: 760px;
+}
+
+.div-header p {
+  max-width: none;
+}
+
+.profile-photo {
+  width: 130px;
+  height: 130px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.85);
+  box-shadow: var(--shadow);
 }
 
 .div-sidebar,
