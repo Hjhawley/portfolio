@@ -6,18 +6,12 @@
   --sidebar-bg: #f7f9fa;
   --header-bg: #1f2933;
   --header-text: #ffffff;
-
   --text-color: #1f2933;
   --muted-text: #5f6c76;
-
   --accent: #2563eb;
   --accent-hover: #1dd8d8;
-
   --border: #d8dee4;
-
-  /* softer than original, less modern than rewrite */
   --shadow: 0 3px 8px rgba(0, 34, 68, 0.18);
-
   --radius: 12px;
 }
 
@@ -27,13 +21,10 @@ body.dark-mode {
   --sidebar-bg: #16202a;
   --header-bg: #0f1720;
   --header-text: #f8fafc;
-
   --text-color: #e5e7eb;
   --muted-text: #a7b0ba;
-
   --accent: #7dd3fc;
   --accent-hover: #bafdf4;
-
   --border: #334155;
 }
 
@@ -45,26 +36,19 @@ body {
   margin: 0;
   min-height: 100vh;
   padding: 1rem;
-
   background-color: var(--page-bg);
   color: var(--text-color);
-
   font-family: "Open Sans", Arial, sans-serif;
   line-height: 1.55;
-
   transition:
     background-color 0.2s ease,
     color 0.2s ease;
 }
 
-/* Background */
-
 .background-image-wrapper {
   position: fixed;
   inset: auto 0 0 0;
-
   height: 34vh;
-
   z-index: -1;
   overflow: hidden;
   pointer-events: none;
@@ -73,29 +57,20 @@ body {
 .background-image-wrapper img {
   width: 100%;
   height: 100%;
-
   object-fit: cover;
   object-position: center top;
-
   opacity: 0.11;
 }
-
-/* Main layout */
 
 .parent {
   width: min(1200px, 100%);
   min-height: calc(100vh - 2rem);
-
   margin: 0 auto;
-
   display: grid;
   grid-template-columns: minmax(280px, 0.95fr) minmax(0, 1.7fr);
   grid-template-rows: auto 1fr;
-
   gap: 1rem;
 }
-
-/* Shared panels */
 
 .div-header,
 .div-sidebar,
@@ -104,20 +79,14 @@ body {
   box-shadow: var(--shadow);
 }
 
-/* Header */
-
 .div-header {
   grid-column: 1 / -1;
-
   padding: 2rem;
-
   background-color: var(--header-bg);
   color: var(--header-text);
-
   display: flex;
   align-items: center;
   gap: 2rem;
-
   text-align: left;
 }
 
@@ -153,8 +122,6 @@ body {
   background-color: var(--panel-bg);
 }
 
-/* Sections */
-
 .section {
   margin-bottom: 2rem;
 }
@@ -172,8 +139,6 @@ article:last-child {
   border-bottom: none;
 }
 
-/* Typography */
-
 h1,
 h2,
 h3,
@@ -184,7 +149,6 @@ ul {
 
 h1 {
   margin-bottom: 0.5rem;
-
   font-size: clamp(2.1rem, 4vw, 3.2rem);
   line-height: 1.08;
   font-weight: 700;
@@ -193,9 +157,7 @@ h1 {
 h2 {
   margin-bottom: 1rem;
   padding-bottom: 0.4rem;
-
   border-bottom: 2px solid var(--border);
-
   font-size: 1.3rem;
   font-weight: 700;
   letter-spacing: 0.01em;
@@ -203,16 +165,13 @@ h2 {
 
 h3 {
   margin-bottom: 0.25rem;
-
   font-size: 1rem;
   font-weight: 700;
 }
 
 p {
   margin-bottom: 1rem;
-
   max-width: 75ch;
-
   font-size: 0.98rem;
 }
 
@@ -226,11 +185,8 @@ li {
   font-size: 0.95rem;
 }
 
-/* Links */
-
 a {
   color: var(--accent);
-
   font-weight: 600;
   text-decoration: none;
 }
@@ -240,13 +196,9 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Header details */
-
 .tagline {
   margin-bottom: 0.8rem;
-
   color: var(--header-text);
-
   font-size: 1.05rem;
 }
 
@@ -254,22 +206,16 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-
   gap: 0.45rem;
-
   margin-bottom: 0;
-
   color: var(--header-text);
-
   font-size: 0.95rem;
 }
 
 .contact-links a {
   color: var(--header-text);
-
   text-decoration: underline;
   text-underline-offset: 3px;
-
   overflow-wrap: anywhere;
 }
 
@@ -279,44 +225,31 @@ a:hover {
 
 .subheading {
   margin-bottom: 0.75rem;
-
   color: var(--muted-text);
-
   font-size: 0.9rem;
   font-weight: 600;
 }
 
-/* Theme toggle */
-
 .theme-toggle-container {
   position: fixed;
-
   right: 1rem;
   bottom: 1rem;
-
   z-index: 1000;
 }
 
 #theme-toggle {
   padding: 0.55rem 0.85rem;
-
   border: 1px solid var(--border);
-
   background-color: var(--panel-bg);
   color: var(--text-color);
-
   box-shadow: var(--shadow);
-
   cursor: pointer;
-
   font-size: 0.9rem;
 }
 
 #theme-toggle:hover {
   border-color: var(--accent);
 }
-
-/* Tablet */
 
 @media (max-width: 900px) {
   .parent {
@@ -327,7 +260,6 @@ a:hover {
   .div-header {
     flex-direction: column;
     text-align: center;
-
     padding: 1.75rem 1.5rem;
   }
 
@@ -339,8 +271,6 @@ a:hover {
     display: none;
   }
 }
-
-/* Mobile */
 
 @media (max-width: 600px) {
   body {
